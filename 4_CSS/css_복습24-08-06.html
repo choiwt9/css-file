@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입페이지</title>
+    <style>
+        #kh{color:  white;
+            text-shadow: 0px 0px 5px purple,
+                        0px 0px 10px darkblue,
+                        0px 0px 15px blue,
+                        0px 0px 20px green,
+                        0px 0px 25px yellow,
+                        0px 0px 30px orange,
+                        0px 0px 35px red;
+            font-size: 30px;
+            font-family: 궁서체;
+            }
+        
+        fieldset{background-color: skyblue;}
+        input{background-color: bisque;}
+        button{background-color :blue; color :white ; width: 300px;}
+    </style>
+</head>
+<body align="center">
+    <h1 class="shadow" id="kh" >kh 회원가입</h1>
+    
+    <form action="signUp" method="get">
+        <fieldset>
+         <input type="text" name="userId" placeholder="아이디"><br>
+         <input type="password" name="userPwd" placeholder="비밀번호"><br>
+         <input type="email" name="email" placeholder="[선택] 이메일주소"><br>
+         
+        </fieldset>
+   
+
+<fieldset>
+        <input type="text" name="userName" placeholder="이름"><br>
+       <label for="birth">생년월일:</label> 
+        <input type="date" name="birth"><br>
+       <select name="telecom">
+            <option value="kt">kt</option>
+            <option value="lg">LG</option>
+            <option value="sk">SK</option>
+        </select>
+        <input type="tel"  name="phone"  placeholder="휴대전화번호">
+    </fieldset>
+    <button>회원가입</button>
+</form>
+ 
+</body>
+</html>
